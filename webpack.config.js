@@ -12,6 +12,9 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    devServer: {
+        historyApiFallback: true,
+    },
     module: {
         rules: [
             {
@@ -51,8 +54,8 @@ module.exports = {
             template: 'public/index.html'   // 불러올 html 경로
         }),
         new MiniCssExtractPlugin({
-            filename: './css/[name].css',
-            chunkFilename: './css/[id].css'
+            filename: './[name].css',
+            chunkFilename: './[id].css'
         }),
         new OptimizeCSSAssetsPlugin({})
     ]
