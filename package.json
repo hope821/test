@@ -29,12 +29,10 @@
 		"optimize-css-assets-webpack-plugin": "^5.0.1",
 		"react": "^16.8.4",
 		"react-dom": "^16.8.4",
+		"react-router-dom": "^5.0.0",
 		"sass-loader": "^7.1.0",
 		"webpack": "^4.29.6",
 		"webpack-cli": "^3.2.3",
 		"webpack-dev-server": "^3.2.1"
-	},
-	"dependencies": {
-		"react-router-dom": "^5.0.0"
 	}
 }
